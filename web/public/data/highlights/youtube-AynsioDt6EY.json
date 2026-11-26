@@ -1,0 +1,48 @@
+{
+  "source": {
+    "id": "youtube-AynsioDt6EY",
+    "kind": "video",
+    "title": "€5.86 Billion in Bets: Who Owns Germany's 'Illegal' Casino?",
+    "publisher": "FinancialPsychology",
+    "url": "https://www.youtube.com/watch?v=AynsioDt6EY",
+    "published": "2026-11-14",
+    "language": "en",
+    "note": "English explainer on the Frankfurt raid and the Casino Secrets reporting about Platincasino. The video itself does not name the businessman behind the casino; neither do the summaries below. Summaries paraphrase what the video says; they are claims, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "01:35",
+      "claim": "Germany's gambling authority (GGL) warned players against Platincasino as an illegal casino and confirmed that the Frankfurt investigation targets offers like it.",
+      "domains": ["platincasino"]
+    },
+    {
+      "time": "03:08",
+      "claim": "From late 2017 Platincasino named a Maltese company, Red Rhino Limited, as its owner; the Maltese register only showed a trustee in place of the real owner.",
+      "domains": ["platincasino"],
+      "other": ["Red Rhino Limited"]
+    },
+    {
+      "time": "04:12",
+      "claim": "In October 2023 the player data, brand and domains moved to a new Curaçao company with no earlier business, whose balance sheet shows a EUR 6 million payment.",
+      "domains": ["platincasino"],
+      "companies": ["Latiform B.V."],
+      "note": "The captions spell the company \"Ladaform BV\"; the register spells it Latiform B.V."
+    },
+    {
+      "time": "04:12",
+      "claim": "A 2022 statement of the Maltese company shows about EUR 5.6 million paid as German slot tax, against roughly EUR 107 million in the publisher's own model for that year.",
+      "domains": ["platincasino"],
+      "other": ["Red Rhino Limited"]
+    },
+    {
+      "time": "05:45",
+      "claim": "Follow the Money counts 646 licensed organisations, 897 owner records for 767 people and only about 30 trust offices behind them, three of which manage more than 50 letterbox firms each.",
+      "other": ["Follow the Money"]
+    },
+    {
+      "time": "07:21",
+      "claim": "Estimates of the missing tax: about EUR 77.6 million for 2024 by prosecutors (preliminary), and about EUR 109 million for 2024 and roughly EUR 250 million for 2023–2025 in the publisher's model.",
+      "domains": ["platincasino"]
+    }
+  ]
+}

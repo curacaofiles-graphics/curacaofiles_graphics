@@ -1,0 +1,43 @@
+{
+  "source": {
+    "id": "youtube-1EtBnmCY178",
+    "kind": "video",
+    "title": "ILLEGAL CASINOS INVESTIGATION",
+    "publisher": "Business-Story",
+    "url": "https://www.youtube.com/watch?v=1EtBnmCY178",
+    "published": "2026-11-06",
+    "language": "de",
+    "note": "German summary of the Casino Secrets research on Platincasino and the SoftSwiss network. Summaries paraphrase what the video says; they are claims, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "01:01",
+      "claim": "The estimated German tax loss caused by Platincasino alone since its move offshore in 2023 is put at EUR 250 million.",
+      "domains": ["platincasino"]
+    },
+    {
+      "time": "05:09",
+      "claim": "Platincasino went online in 2013 and grew around 2020 through aggressive marketing; after failing to get a German licence its owner moved it offshore, into a white-label set-up with SoftSwiss.",
+      "domains": ["platincasino"],
+      "other": ["SoftSwiss"]
+    },
+    {
+      "time": "05:40",
+      "claim": "In this set-up the real founders are said to live in Berlin, a Georgian national is registered as the owner in Curaçao, and companies in Cyprus handle card payments.",
+      "domains": ["platincasino"],
+      "companies": ["Dama N.V."],
+      "other": ["SoftSwiss"],
+      "note": "The video does not name the Curaçao company; Dama N.V. is the company the register lists with the platincasino.io domain and that other sources link to this set-up."
+    },
+    {
+      "time": "06:10",
+      "claim": "From the leaked data, a transaction volume of about EUR 1.8 billion in a single year is attributed to the SoftSwiss network.",
+      "other": ["SoftSwiss"]
+    },
+    {
+      "time": "07:14",
+      "claim": "Shortly before publication a raid in Frankfurt seized about EUR 80 million and the casino's German owner was arrested.",
+      "domains": ["platincasino"]
+    }
+  ]
+}

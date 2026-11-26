@@ -1,0 +1,28 @@
+{
+  "source": {
+    "id": "youtube-y2WrVjAtOmM",
+    "kind": "video",
+    "title": "How Stake Became a $2.6 Billion Casino Without a Single Building",
+    "publisher": "Professor Frontman",
+    "url": "https://www.youtube.com/watch?v=y2WrVjAtOmM",
+    "published": "2026-10-28",
+    "language": "en",
+    "note": "English profile of Stake that cites the Casino Secrets documents reported by Follow the Money. Summaries paraphrase what the video says; they are claims, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "00:30",
+      "claim": "Stake.com was launched in June 2017 by Ed Craven and Bijan Tehrani with a Curaçao licence and an office in Melbourne.",
+      "domains": ["stake"],
+      "other": ["Ed Craven", "Bijan Tehrani"]
+    },
+    {
+      "time": "05:08",
+      "claim": "According to the leaked documents, Stake's new licence was issued conditionally; the regulator gave the company five weeks to explain its relationship with the founders, and the paperwork names a different man as sole owner.",
+      "domains": ["stake"],
+      "companies": ["Medium Rare N.V."],
+      "people": ["Mladen Vuckovic"],
+      "note": "The video does not name the company or the declared owner; both are added from the register (Stake's licensee and its recorded ultimate beneficial owner)."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "source": {
+    "id": "youtube-dKM7ly_YdEk",
+    "kind": "video",
+    "title": "The Island Behind the Online Casino Epidemic",
+    "publisher": "TerraScope",
+    "url": "https://www.youtube.com/watch?v=dKM7ly_YdEk",
+    "published": "2026-10-09",
+    "language": "en",
+    "note": "English history of Curaçao's licensing system, ending with the Casino Secrets reporting. Summaries paraphrase what the video says; they are claims, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "13:02",
+      "claim": "Stake was founded in 2017 by Ed Craven and Bijan Tehrani; it runs on cryptocurrency, has offices in Melbourne and its licence is tied to a company registered in Curaçao.",
+      "domains": ["stake"],
+      "other": ["Ed Craven", "Bijan Tehrani"]
+    },
+    {
+      "time": "14:34",
+      "claim": "Blaze, which had Neymar as its ambassador, is named as one of the most visible Curaçao-licensed betting brands sponsoring Brazilian football.",
+      "domains": ["blaze"]
+    },
+    {
+      "time": "14:34",
+      "claim": "1xBet has sponsored top football leagues, has been sanctioned several times for targeting countries where it had no right to operate, and holds a Curaçao licence.",
+      "domains": ["1xbet"]
+    },
+    {
+      "time": "15:05",
+      "claim": "Casino Secrets: a Berlin security researcher opened an account on the new authority's portal with a fake company and a Gmail address; the leaked documents cover hundreds of licensed companies and nearly 800 owners, with licences granted while ownership questions were open.",
+      "other": ["Curaçao Gaming Authority"]
+    }
+  ]
+}

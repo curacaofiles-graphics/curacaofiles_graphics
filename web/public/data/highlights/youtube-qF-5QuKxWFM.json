@@ -1,0 +1,46 @@
+{
+  "source": {
+    "id": "youtube-qF-5QuKxWFM",
+    "kind": "video",
+    "title": "퀴라소 카지노 서류 4만 건 유출…스테이크 등 역외 업체 실소유주 의혹 폭로",
+    "publisher": "카지노친구",
+    "url": "https://www.youtube.com/watch?v=qF-5QuKxWFM",
+    "published": "2026-10-20",
+    "language": "ko",
+    "note": "Korean news summary of the leaked Curaçao licensing files (Stake, 1xBet, Santeda). Summaries paraphrase what the video says; they are claims, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "01:02",
+      "claim": "Stake's Curaçao company Medium Rare declared a Serbian national as sole owner; the founders Ed Craven and Bijan Tehrani are not in the application, and assessors found loans and payments of tens to hundreds of millions of dollars to companies and people linked to them.",
+      "domains": ["stake"],
+      "companies": ["Medium Rare N.V."],
+      "people": ["Mladen Vuckovic"],
+      "other": ["Ed Craven", "Bijan Tehrani"],
+      "note": "The automatic Korean captions garble the owner's name; the register spells it Mladen Vuckovic."
+    },
+    {
+      "time": "01:34",
+      "claim": "The authority granted Medium Rare a conditional licence on 9 June 2025 and asked it to explain the ownership and contracts within five weeks; whether this was done is not visible in the published records.",
+      "domains": ["stake"],
+      "companies": ["Medium Rare N.V."]
+    },
+    {
+      "time": "01:34",
+      "claim": "For 1xBet the Curaçao company declared a Ukrainian national as owner; assessors asked about links to three Russian-born founders, and the licence was granted in 2024 without an answer.",
+      "domains": ["1xbet"]
+    },
+    {
+      "time": "02:06",
+      "claim": "Santeda's licence files show the software company Upgaming in the declared owner's contact details and file names, and EUR 15.59 million lent to companies owned by Upgaming shareholders or directors; Upgaming denies running a casino network.",
+      "companies": ["Santeda International B.V."],
+      "other": ["Upgaming"]
+    },
+    {
+      "time": "02:38",
+      "claim": "The authority says requirements were applied step by step during the transition to the new law and that ownership questions alone did not lead to refusals; Professor Marcel Pheijffer called the Stake decision hard to understand.",
+      "domains": ["stake"],
+      "other": ["Curaçao Gaming Authority", "Marcel Pheijffer"]
+    }
+  ]
+}
