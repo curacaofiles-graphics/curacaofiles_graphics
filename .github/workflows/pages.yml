@@ -1,0 +1,106 @@
+name: Build data and deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Download every page again instead of reusing the cached ones
+        type: boolean
+        default: false
+  schedule:
+    - cron: "17 3 * * 1" # weekly, Monday 03:17 UTC; downloads everything again
+  push:
+    branches: [master, main]
+    paths:
+      - "scraper/**"
+      - "web/**"
+      - "highlights/**"
+      - ".github/workflows/pages.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v7
+
+      # Downloaded pages are kept between runs, so a normal run only fetches what is missing.
+      - name: Restore page cache
+        uses: actions/cache@v6
+        with:
+          path: scraper/.cache/html
+          key: pages-html-${{ github.run_id }}
+          restore-keys: pages-html-
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Install scraper
+        run: pip install -e ./scraper
+
+      - name: Test scraper
+        run: |
+          pip install pytest
+          cd scraper && python -m pytest -q
+
+      - name: Crawl (polite, one request at a time)
+        env:
+          REFRESH: ${{ github.event_name == 'schedule' || inputs.refresh == true }}
+        run: |
+          if [ "$REFRESH" = "true" ]; then
+            curacao-scraper crawl --refresh
+          else
+            curacao-scraper crawl
+          fi
+
+      - name: Build graph.json
+        run: |
+          if [ -d highlights ]; then
+            curacao-scraper build --highlights highlights
+          else
+            curacao-scraper build
+          fi
+
+      - uses: pnpm/action-setup@v6
+        with:
+          package_json_file: web/package.json # pnpm version comes from its packageManager field
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Build site
+        working-directory: web
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm test
+          pnpm run layout
+          pnpm run build
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
