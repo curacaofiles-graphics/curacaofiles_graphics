@@ -1,8 +1,8 @@
 """Turn YouTube automatic captions (json3) into a plain transcript with timestamps.
 
-    yt-dlp --skip-download --write-auto-subs --sub-langs "tr-orig,tr" --sub-format json3 \
+    yt-dlp --skip-download --write-auto-subs --sub-langs "de-orig,de" --sub-format json3 \
         -o "VIDEO_ID.%(ext)s" "https://www.youtube.com/watch?v=VIDEO_ID"
-    python scraper/tools/transcript.py VIDEO_ID.tr-orig.json3 VIDEO_ID.transcript.txt
+    python scraper/tools/transcript.py VIDEO_ID.de-orig.json3 VIDEO_ID.transcript.txt
 
 Each output line starts with the time it begins at ("[08:49] …"), one line per
 `--chunk` seconds (default 30), so a claim can be cited with the right timestamp.
