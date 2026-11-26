@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: The source register (Casino Secrets)
+    url: https://curacaofiles.com/
+    about: Errors on the source pages themselves (names, dates, company details) can only be corrected by the source.
+  - name: Report a security problem privately
+    url: https://github.com/curacaofiles-graphics/curacaofiles_graphics/security/advisories/new
+    about: Please do not open public issues for security problems.

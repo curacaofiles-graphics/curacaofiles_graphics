@@ -1,0 +1,43 @@
+name: Suggest a media mention
+description: Send a link to a news video or article about companies, people or domains in the register.
+title: "Media mention: "
+labels: ["media mention"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! The link is enough; we will check the source, write the summary and add the timestamps.
+        Mentions are shown as claims of the source, never as findings of this project.
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      description: Video or article URL.
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      placeholder: English, Spanish, German…
+  - type: textarea
+    id: moments
+    attributes:
+      label: Names and moments (optional)
+      description: Companies, people, brands or domains mentioned, with the minute if it is a video.
+      placeholder: |
+        12:40 – Example Games N.V. and its owner
+        25:10 – examplecasino.com
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: For example, if the video is blocked in some countries.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Check
+      options:
+        - label: The source is published publicly by a news outlet, journalist or researcher.
+          required: true

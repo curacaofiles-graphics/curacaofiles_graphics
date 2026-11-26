@@ -1,0 +1,32 @@
+name: Report a bug
+description: Something on the site does not work or looks wrong.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The page address helps a lot; it keeps the selected record, filters and language.
+      placeholder: |
+        1. Open https://curacaofiles-graphics.github.io/curacaofiles_graphics/?view=map
+        2. Click …
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 140 on Windows, Safari on iPhone…
+  - type: input
+    id: language
+    attributes:
+      label: Interface language
+      placeholder: English

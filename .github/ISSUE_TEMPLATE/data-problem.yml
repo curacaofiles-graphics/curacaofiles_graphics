@@ -1,0 +1,39 @@
+name: Report a data problem
+description: Two people merged by mistake, a wrong country, a missing link or another error in how the site shows the register.
+title: "Data: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We show what the source register publishes. If the source page itself is wrong (a name, date or company detail), it has to be corrected by the source.
+        This form is for mistakes we make when combining the records: merged or split people, countries, links between companies, domains or media mentions.
+  - type: input
+    id: link
+    attributes:
+      label: Link to the record on the site
+      description: Select the node on the site and copy the address (it ends with something like #p%3A1a2b3c…).
+      placeholder: https://curacaofiles-graphics.github.io/curacaofiles_graphics/#c%3A123
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - Different people merged into one
+        - The same person shown twice
+        - Wrong or missing country
+        - Wrong or missing link between records
+        - Domain problem
+        - Media mention problem
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What you expected, and the source page that shows it.
+    validations:
+      required: true
