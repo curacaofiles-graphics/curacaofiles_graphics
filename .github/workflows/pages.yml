@@ -18,7 +18,6 @@ on:
     paths:
       - "scraper/**"
       - "web/**"
-      - "highlights/**"
       - ".github/workflows/pages.yml"
 
 permissions:
@@ -74,7 +73,7 @@ jobs:
         id: data
         if: inputs.crawl == true
         run: |
-          curacao-scraper build --highlights highlights
+          curacao-scraper build
           echo "rebuilt=true" >> "$GITHUB_OUTPUT"
 
       - uses: pnpm/action-setup@v6

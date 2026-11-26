@@ -1,6 +1,6 @@
 """Curated media mentions ("highlights") matched onto graph nodes.
 
-Each file in `scraper/highlights/*.json` describes one source (a video, an article)
+Each file in `web/public/data/highlights/*.json` describes one source (a video, an article)
 and the moments in it that name brands, companies or people. Names are matched
 against the scraped data; whatever cannot be found is kept as `unmatched`.
 

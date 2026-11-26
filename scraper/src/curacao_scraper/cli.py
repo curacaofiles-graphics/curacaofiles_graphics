@@ -20,7 +20,7 @@ from .parse import parse_company, parse_list, parse_other_jurisdictions
 ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_CACHE = ROOT / "scraper" / ".cache" / "html"
 DEFAULT_OUT = ROOT / "web" / "public" / "data" / "graph.json"
-DEFAULT_HIGHLIGHTS = ROOT / "highlights"
+DEFAULT_HIGHLIGHTS = ROOT / "web" / "public" / "data" / "highlights"
 
 LIST_PATH = "/casinos/"
 OTHER_PATH = "/other-jurisdictions"

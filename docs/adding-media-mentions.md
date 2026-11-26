@@ -30,7 +30,7 @@ yt-dlp --skip-download --list-subs "https://www.youtube.com/watch?v=VIDEO_ID"
 Download the automatic captions in the video's own language (`-orig` is the original track, the other one may be a machine translation). Use the language code of the video: `de`, `en`, `nl`, `tr` …
 
 ```sh
-cd highlights
+cd web/public/data/highlights
 yt-dlp --skip-download --write-auto-subs --write-subs \
   --sub-langs "de-orig,de" --sub-format json3 \
   -o "VIDEO_ID.%(ext)s" "https://www.youtube.com/watch?v=VIDEO_ID"
@@ -78,7 +78,7 @@ Search the viewer (or `web/public/data/graph.json`) for each one. The register s
 
 ## 3. Write the highlight file
 
-One file per source in the repository's [`highlights/`](../highlights) folder, named `youtube-VIDEO_ID.json` (or `article-SHORTNAME.json`). Keep the transcript next to it as `youtube-VIDEO_ID.transcript.txt`.
+One file per source in the [`web/public/data/highlights/`](../web/public/data/highlights) folder, named `youtube-VIDEO_ID.json` (or `article-SHORTNAME.json`). Keep the transcript next to it as `youtube-VIDEO_ID.transcript.txt`.
 
 ```json
 {
@@ -127,7 +127,7 @@ You may list both the caption spelling and the register spelling; the one that i
 
 ## 4. Rebuild and check
 
-Build the graph; it reads `highlights/` by default (`--highlights PATH` uses another folder):
+Build the graph; it reads `web/public/data/highlights/` by default (`--highlights PATH` uses another folder):
 
 ```sh
 cd scraper
@@ -159,6 +159,6 @@ Check that the claim, the timestamp link and the matched nodes are right.
 
 ## 5. Publish
 
-Commit the files in `highlights/` together with the rebuilt `web/public/data/` (run `build` and `pnpm run layout` first). The GitHub Pages workflow deploys the committed data as it is (`.github/workflows/pages.yml`). To try files without publishing them, keep them in another folder and build with `--highlights PATH`.
+Commit the files in `web/public/data/highlights/` together with the rebuilt `web/public/data/` (run `build` and `pnpm run layout` first). The GitHub Pages workflow deploys the committed data as it is (`.github/workflows/pages.yml`). To try files without publishing them, keep them in another folder and build with `--highlights PATH`.
 
 Commit the highlight file and its transcript together, with a message such as `feat(highlights): add mentions from <source title>`.
