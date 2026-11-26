@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from "react
 
 import { GraphView } from "./components/GraphView";
 import { Legend, type LegendItem } from "./components/Legend";
+import { useGatedLink } from "./components/LinkGate";
 import { SearchBox } from "./components/SearchBox";
 import { MentionsPanel } from "./components/Mentions";
 import { NationalityPanel } from "./components/NationalityPanel";
@@ -21,6 +22,7 @@ import {
   type LoadedData,
 } from "./data";
 import { LanguagePicker, useI18n, type Translate } from "./i18n";
+import { PRESS, type PressItem } from "./press";
 import { term } from "./terms";
 import type { CompanyNode, NodeType } from "./types";
 
@@ -48,6 +50,36 @@ function graphLegend(t: Translate, visible: Set<NodeType>, mentions: boolean): L
   }
   if (mentions) items.push({ shape: "star", color: "#facc15", label: t("mentions.inMedia") });
   return items;
+}
+
+/** Articles or videos about the investigation; video links open through the regional-block notice. */
+function PressList({ kind, title }: { kind: PressItem["kind"]; title: string }) {
+  const gated = useGatedLink();
+  const items = PRESS.filter((item) => item.kind === kind);
+  if (!items.length) return null;
+  return (
+    <>
+      <h4 className="press-kind">{title}</h4>
+      <ul className="press">
+        {items.map((item) => (
+          <li key={item.url}>
+            {kind === "video" ? (
+              <a {...gated(item.url, "video")}>▶ {item.title}</a>
+            ) : (
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {item.title}
+              </a>
+            )}
+            <span className="muted small">
+              {" "}
+              · {item.outlet}
+              {item.date && ` · ${item.date}`} · {item.language.toUpperCase()}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
 }
 
 function readCountries(): string[] {
@@ -363,6 +395,10 @@ export function App() {
             </p>
             <p className="muted small">{t("about.people")}</p>
             <p className="muted small">{t("about.videos")}</p>
+            <h3 className="about-subtitle">{t("about.press")}</h3>
+            <p className="muted small">{t("about.pressNote")}</p>
+            <PressList kind="article" title={t("press.articles")} />
+            <PressList kind="video" title={t("press.videos")} />
             <button type="button" onClick={() => setAboutOpen(false)}>
               {t("action.close")}
             </button>

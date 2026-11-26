@@ -180,6 +180,10 @@ const dict: Dict = {
   "map.companies": "Компанії: {n}",
   "map.holders": "Власники ліцензій: {n}",
   "legend.companies": "Компанії за списком реєстру",
+  "about.press": "У пресі",
+  "about.pressNote": "Публікації третіх сторін про розслідування Casino Secrets.",
+  "press.articles": "Статті",
+  "press.videos": "Відео",
 };
 
 export default dict;

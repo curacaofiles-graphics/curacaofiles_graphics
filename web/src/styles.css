@@ -1381,3 +1381,23 @@ button:disabled {
 .map-loading {
   padding: 1rem;
 }
+
+/* ---------------------------------------------------------------- about: press */
+
+.about-subtitle {
+  margin: 1rem 0 0.2rem;
+  font-size: 1rem;
+}
+
+.press {
+  margin: 0.3rem 0 0.8rem;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.press-kind {
+  margin: 0.6rem 0 0.1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}

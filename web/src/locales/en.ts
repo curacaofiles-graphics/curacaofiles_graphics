@@ -181,6 +181,10 @@ const en = {
   "map.companies": "{n} companies",
   "map.holders": "{n} licence holders",
   "legend.companies": "Companies, by register list",
+  "about.press": "In the press",
+  "about.pressNote": "Reporting on the Casino Secrets investigation by third parties.",
+  "press.articles": "Articles",
+  "press.videos": "Videos",
 };
 
 export type Key = keyof typeof en;
