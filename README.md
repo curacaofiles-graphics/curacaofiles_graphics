@@ -4,6 +4,12 @@ An interactive relationship graph of the public **Casino Secrets** register data
 
 The source site lets you search companies and domains one page at a time. This project puts the same records into a single network so that links between them become visible: one person who appears in three companies is **one node** connected to all three, a company is connected to its local representative and master licensor, and companies that list the same casino domain are connected to each other.
 
+**Live site: [curacaofiles-graphics.github.io/curacaofiles_graphics](https://curacaofiles-graphics.github.io/curacaofiles_graphics/)**
+
+![Graph view: companies, people and their links](docs/images/graph.jpg)
+
+![Map view: people by country, linked to the licensing jurisdiction of their companies](docs/images/map.jpg)
+
 > **Read before use.** The inclusion of a person, company, domain, or other entity in the Casino Secrets database does not imply illegal or improper conduct. Records may be incomplete, outdated, or contain errors from the underlying source systems. Verify identities before drawing conclusions. All credit for the investigation and the data goes to [Casino Secrets](https://www.lilithwittmann.de/series/casinosecrets/) and its partners.
 
 ## Features
