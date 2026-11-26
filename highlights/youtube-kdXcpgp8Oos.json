@@ -1,0 +1,45 @@
+{
+  "source": {
+    "id": "youtube-kdXcpgp8Oos",
+    "kind": "video",
+    "title": "Hackerin: So hat sie den Millionenbetrug illegaler Casinos aufgedeckt",
+    "publisher": "Finanzfluss",
+    "url": "https://www.youtube.com/watch?v=kdXcpgp8Oos",
+    "published": "2026-11-05",
+    "language": "de",
+    "note": "Interview with the Casino Secrets publisher. Summaries paraphrase what is said; they are claims, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "32:35",
+      "claim": "Platin Casino was built up in Frankfurt by Thomas Daniel Kalman, later moved with its staff to Malta and the casino to Curaçao.",
+      "domains": [
+        "platincasino"
+      ],
+      "other": [
+        "Thomas Daniel Kalman"
+      ]
+    },
+    {
+      "time": "33:37",
+      "claim": "The Curaçao company is said to belong pro forma to a straw person living in Georgia, run with a local trust office in a set-up linked to SoftSwiss, while the brand Platincasino stayed with Kalman.",
+      "domains": [
+        "platincasino"
+      ],
+      "companies": [
+        "Dama"
+      ],
+      "other": [
+        "SoftSwiss",
+        "Ivan Montik"
+      ]
+    },
+    {
+      "time": "40:21",
+      "claim": "The publisher estimates the German tax loss since 2023 at roughly EUR 250 million.",
+      "domains": [
+        "platincasino"
+      ]
+    }
+  ]
+}

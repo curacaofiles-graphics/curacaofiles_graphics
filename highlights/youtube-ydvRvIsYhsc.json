@@ -1,0 +1,250 @@
+{
+  "source": {
+    "id": "youtube-ydvRvIsYhsc",
+    "kind": "video",
+    "title": "DEV SIZINTI - ABLA HERKESİ PATLATTI",
+    "publisher": "Cevheri Güven",
+    "url": "https://www.youtube.com/watch?v=ydvRvIsYhsc",
+    "published": "2026-09-27",
+    "language": "tr",
+    "note": "Turkish live stream that walks through Casino Secrets records of Turkish-facing betting brands. Summaries below paraphrase what the video says; they are claims by the video, not findings of this project. The video is not available from Türkiye. Names follow the video; where the register spells them differently the register spelling is added (see each mention's note)."
+  },
+  "mentions": [
+    {
+      "time": "08:49",
+      "claim": "Artemisbet is shown as a brand of SXM Management; the related entity is Demet Şahin, whom the video describes as the wife of Veysel Şahin.",
+      "domains": [
+        "artemisbet"
+      ],
+      "companies": [
+        "SXM Management"
+      ],
+      "people": [
+        "Demet Şahin"
+      ],
+      "other": [
+        "Veysel Şahin"
+      ]
+    },
+    {
+      "time": "09:21",
+      "claim": "Other domains listed under SXM Management include Betper, Masbahis, Perabet and Truvabet.",
+      "domains": [
+        "betper",
+        "masbahis",
+        "perabet",
+        "truvabet"
+      ],
+      "companies": [
+        "SXM Management"
+      ]
+    },
+    {
+      "time": "09:51",
+      "claim": "A register document names Demet Şahin as UBO and Mustafa Yılmaz as former UBO, and records her as an Albanian national.",
+      "companies": [
+        "SXM Management"
+      ],
+      "people": [
+        "Demet Şahin",
+        "Mustafa Yılmaz"
+      ]
+    },
+    {
+      "time": "11:56",
+      "claim": "Financial statements filed for SXM Management show total assets of about EUR 60 million (2022), EUR 69 million (2023) and EUR 84 million (2024).",
+      "companies": [
+        "SXM Management"
+      ]
+    },
+    {
+      "time": "13:30",
+      "claim": "SXM Management's business plan lists Venusbet, Truvabet and Betper among its sites.",
+      "domains": [
+        "venusbet",
+        "truvabet",
+        "betper"
+      ],
+      "companies": [
+        "SXM Management"
+      ]
+    },
+    {
+      "time": "14:31",
+      "claim": "Searching Perabet, Mr. Bahis, Imajbet, Safirbet, Savoybet and Alexabet leads to Demet Şahin; Savoybet sits under Longterm Interactive.",
+      "domains": [
+        "perabet",
+        "mrbahis",
+        "imajbet",
+        "safirbet",
+        "savoybet",
+        "alexabet",
+        "savoybetting"
+      ],
+      "companies": [
+        "Longterm Interactive"
+      ],
+      "people": [
+        "Demet Şahin"
+      ]
+    },
+    {
+      "time": "17:39",
+      "claim": "A document is approved by Salih Gökhan, described as an accountant/auditor based in Cyprus; the video calls him a key person for following the money.",
+      "people": [
+        "Salih Gökhan"
+      ]
+    },
+    {
+      "time": "20:13",
+      "claim": "Casibom is shown under Seguri N.V., with Şerif Elmas as the related person.",
+      "domains": [
+        "casibom"
+      ],
+      "companies": [
+        "Seguri"
+      ],
+      "people": [
+        "Şerif Elmas"
+      ]
+    },
+    {
+      "time": "20:45",
+      "claim": "Milanobet is shown under Codex B.V., with Ali Faki as owner/manager and 80+ domains.",
+      "domains": [
+        "milanobet"
+      ],
+      "companies": [
+        "Codex"
+      ],
+      "people": [
+        "Ali Faki",
+        "Ali Fakih"
+      ],
+      "note": "Register spelling: Ali Fakih (Codex B.V.)."
+    },
+    {
+      "time": "21:16",
+      "claim": "Kralbet is shown under Feel So Good B.V. with Veysel Demir; the video calls him a key name that appears across many sites.",
+      "domains": [
+        "kralbet"
+      ],
+      "companies": [
+        "Feel So Good"
+      ],
+      "people": [
+        "Veysel Demir"
+      ]
+    },
+    {
+      "time": "21:48",
+      "claim": "Betturkey also leads to Veysel Demir.",
+      "domains": [
+        "betturkey"
+      ],
+      "people": [
+        "Veysel Demir"
+      ]
+    },
+    {
+      "time": "22:20",
+      "claim": "Istanbulbahis is shown under Maltech Technology N.V., with İrfan Sabahattin Şakir as the related person.",
+      "domains": [
+        "istanbulbahis"
+      ],
+      "companies": [
+        "Maltech Technology"
+      ],
+      "people": [
+        "İrfan Sabahattin Şakir",
+        "Irfan Sebahatin Shakir"
+      ],
+      "note": "Register spelling: Irfan Sebahatin Shakir (Maltech Technology N.V.)."
+    },
+    {
+      "time": "22:50",
+      "claim": "Mavibet is shown under Coinbar N.V. with Uğur Mercan, Mehmet Gördağ and Şevket Ayaksız; the company lists 33 sites including Zirvebet, Jojobet and Lunabet.",
+      "domains": [
+        "mavibet",
+        "zirvebet",
+        "jojobet",
+        "lunabet"
+      ],
+      "companies": [
+        "Coinbar"
+      ],
+      "people": [
+        "Uğur Mercan",
+        "Mehmet Gördağ",
+        "Şevket Ayaksız"
+      ]
+    },
+    {
+      "time": "23:21",
+      "claim": "Tipobet is shown under Grace Bay B.V., again with Veysel Demir.",
+      "domains": [
+        "tipobet"
+      ],
+      "companies": [
+        "Grace Bay"
+      ],
+      "people": [
+        "Veysel Demir"
+      ]
+    },
+    {
+      "time": "23:53",
+      "claim": "Mersobahis is shown under Joker Marketing B.V. with Zurab Kadir.",
+      "domains": [
+        "mersobahis"
+      ],
+      "companies": [
+        "Joker Marketing"
+      ],
+      "people": [
+        "Zurab Kadir"
+      ]
+    },
+    {
+      "time": "24:25",
+      "claim": "Meritpremium is shown under Redline B.V.; the video then lists Şeref Yazıcı's sites and describes him as Veysel Şahin's right hand whose crypto assets were seized in Türkiye.",
+      "domains": [
+        "meritpremium"
+      ],
+      "companies": [
+        "Redline",
+        "Red Lane"
+      ],
+      "people": [
+        "Kartal Uğur",
+        "Şeref Yazıcı"
+      ],
+      "other": [
+        "Veysel Şahin"
+      ],
+      "note": "The automatic captions say \"Redline\"; the register company is Red Lane B.V."
+    },
+    {
+      "time": "25:28",
+      "claim": "Redline B.V. (domains such as Primebahis, B1bahis, Turbobahis) is shown with Kadir Uğur as owner and manager; Demir Karakuş is named as another key person. The video claims these are front names for Erkan Başer.",
+      "domains": [
+        "primebahis",
+        "b1bahis",
+        "turbobahis"
+      ],
+      "companies": [
+        "Redline",
+        "Red Lane"
+      ],
+      "people": [
+        "Kadir Uğur",
+        "Demir Karakuş",
+        "Kartal Uğur"
+      ],
+      "other": [
+        "Erkan Başer"
+      ],
+      "note": "Captions say \"Redline\" and \"Kadir Uğur\"; the register shows Red Lane B.V. with Kartal Ugur."
+    }
+  ]
+}

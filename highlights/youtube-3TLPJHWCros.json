@@ -1,0 +1,32 @@
+{
+  "source": {
+    "id": "youtube-3TLPJHWCros",
+    "kind": "video",
+    "title": "Platincasino offline | #casinosecrets",
+    "publisher": "Lilith Wittmann",
+    "url": "https://www.youtube.com/watch?v=3TLPJHWCros",
+    "published": "2026-10-03",
+    "language": "de",
+    "note": "Short update by the Casino Secrets publisher. Summaries paraphrase the video; they are claims by the video, not findings of this project."
+  },
+  "mentions": [
+    {
+      "time": "00:00",
+      "claim": "Platin Casino is offline for new players; the video says its owner, Thomas Daniel Kalman, has been in custody in Frankfurt since early September over tax evasion of several hundred million euros.",
+      "domains": [
+        "platincasino"
+      ],
+      "other": [
+        "Thomas Daniel Kalman"
+      ],
+      "note": "Automatic captions spell the name \"Keilmann\"; press coverage spells it Kalman."
+    },
+    {
+      "time": "01:02",
+      "claim": "About two weeks before publication, a raid in Frankfurt secured around EUR 80 million in assets; the register data showed who owns Platin Casino and allowed an estimate of the tax loss.",
+      "domains": [
+        "platincasino"
+      ]
+    }
+  ]
+}

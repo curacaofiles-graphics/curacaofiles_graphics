@@ -1,0 +1,65 @@
+{
+  "source": {
+    "id": "youtube-QIU0oeGzVJ0",
+    "kind": "video",
+    "title": "Casinos Secrets: Wer casht ab mit illegalen Casinos?",
+    "publisher": "STRG_F (NDR / funk)",
+    "url": "https://www.youtube.com/watch?v=QIU0oeGzVJ0",
+    "published": "2026-09-22",
+    "language": "de",
+    "note": "German investigative documentary by a Casino Secrets media partner. Summaries below paraphrase what the film says; they are claims by the film, not findings of this project. People the film only names by initials are not named here either."
+  },
+  "mentions": [
+    {
+      "time": "14:08",
+      "claim": "Platin Casino, described as one of the largest illegal casinos aimed at German players, is said to be closely linked to SoftSwiss; SoftSwiss says the operator is an independent company it at most supplied with software or game access.",
+      "domains": [
+        "platincasino"
+      ],
+      "other": [
+        "SoftSwiss"
+      ]
+    },
+    {
+      "time": "24:04",
+      "claim": "The film attributes more than 1,000 Curaçao-licensed online casinos to a SoftSwiss network, at least 388 of them aimed at German players; SoftSwiss denies operating casinos or being behind the network.",
+      "other": [
+        "SoftSwiss"
+      ]
+    },
+    {
+      "time": "25:06",
+      "claim": "Dama N.V. passed from the SoftSwiss founder to a 67-year-old woman from Georgia on the day Germany's new gambling treaty took effect (2021); on paper she is the beneficial owner of a company that took in more than EUR 1 billion in 2024.",
+      "companies": [
+        "Dama"
+      ],
+      "other": [
+        "Ivan Montik"
+      ]
+    },
+    {
+      "time": "26:09",
+      "claim": "A Curaçao Gaming Authority compliance memo doubted the owner had the means or experience, suspected SoftSwiss enjoys most of the profit and noted Germany as a target market; the licence was granted anyway. The authority says the memo was not a final assessment and that the network was 'fabricated'.",
+      "companies": [
+        "Dama"
+      ]
+    },
+    {
+      "time": "26:41",
+      "claim": "About 250 gambling sites were registered through these companies by April 2026.",
+      "companies": [
+        "Dama"
+      ]
+    },
+    {
+      "time": "30:22",
+      "claim": "Platin Casino earlier belonged to a Malta company (Retrino Limited); after a German player won a court case, the casino had been sold to Curaçao and the Malta company was left without assets.",
+      "domains": [
+        "platincasino"
+      ],
+      "other": [
+        "Retrino Limited"
+      ]
+    }
+  ]
+}
