@@ -1,0 +1,31 @@
+# Scraper: downloaded pages (reproducible, large) and Python tooling
+scraper/.cache/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.ruff_cache/
+.mypy_cache/
+scraper/build/
+scraper/dist/
+
+# Web: dependencies, build output and caches (the generated data in web/public/data/ is committed)
+web/node_modules/
+web/dist/
+web/coverage/
+*.tsbuildinfo
+.pnpm-store/
+
+# Local settings and secrets
+.env
+.env.*
+.claude/settings.local.json
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
