@@ -1,14 +1,18 @@
 name: Build data and deploy to GitHub Pages
 
 on:
+  # The data is committed in web/public/data, so a normal run only builds and deploys the site.
+  # Crawl the source again only by hand (Actions -> Run workflow -> crawl), e.g. if it publishes new records.
   workflow_dispatch:
     inputs:
-      refresh:
-        description: Download every page again instead of reusing the cached ones
+      crawl:
+        description: Crawl the source and rebuild the data before deploying
         type: boolean
         default: false
-  schedule:
-    - cron: "17 3 * * 1" # weekly, Monday 03:17 UTC; downloads everything again
+      refresh:
+        description: When crawling, download every page again instead of reusing cached ones
+        type: boolean
+        default: false
   push:
     branches: [master, main]
     paths:
@@ -33,8 +37,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # Downloaded pages are kept between runs, so a normal run only fetches what is missing.
+      # Downloaded pages are kept between crawls, so a crawl only fetches what is missing.
       - name: Restore page cache
+        if: inputs.crawl == true
         uses: actions/cache@v6
         with:
           path: scraper/.cache/html
@@ -54,8 +59,9 @@ jobs:
           cd scraper && python -m pytest -q
 
       - name: Crawl (polite, one request at a time)
+        if: inputs.crawl == true
         env:
-          REFRESH: ${{ github.event_name == 'schedule' || inputs.refresh == true }}
+          REFRESH: ${{ inputs.refresh == true }}
         run: |
           if [ "$REFRESH" = "true" ]; then
             curacao-scraper crawl --refresh
@@ -63,13 +69,13 @@ jobs:
             curacao-scraper crawl
           fi
 
+      # Without a crawl the committed data is deployed as it is.
       - name: Build graph.json
+        id: data
+        if: inputs.crawl == true
         run: |
-          if [ -d highlights ]; then
-            curacao-scraper build --highlights highlights
-          else
-            curacao-scraper build
-          fi
+          curacao-scraper build --highlights highlights
+          echo "rebuilt=true" >> "$GITHUB_OUTPUT"
 
       - uses: pnpm/action-setup@v6
         with:
@@ -86,7 +92,7 @@ jobs:
         run: |
           pnpm install --frozen-lockfile
           pnpm test
-          pnpm run layout
+          if [ "${{ steps.data.outputs.rebuilt }}" = "true" ]; then pnpm run layout; fi
           pnpm run build
 
       - uses: actions/configure-pages@v6

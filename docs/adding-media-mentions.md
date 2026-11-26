@@ -159,6 +159,6 @@ Check that the claim, the timestamp link and the matched nodes are right.
 
 ## 5. Publish
 
-Files in `highlights/` are included in the GitHub Pages build automatically (`.github/workflows/pages.yml`). To try files without publishing them, keep them in another folder and build with `--highlights PATH`.
+Commit the files in `highlights/` together with the rebuilt `web/public/data/` (run `build` and `pnpm run layout` first). The GitHub Pages workflow deploys the committed data as it is (`.github/workflows/pages.yml`). To try files without publishing them, keep them in another folder and build with `--highlights PATH`.
 
 Commit the highlight file and its transcript together, with a message such as `feat(highlights): add mentions from <source title>`.

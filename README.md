@@ -90,7 +90,7 @@ Interface strings live in `web/src/locales/`, one file per language. Copy `en.ts
 
 ## Deploy (GitHub Pages)
 
-`.github/workflows/pages.yml` crawls (reusing cached pages between runs; weekly full refresh), runs the tests, builds the data and the site (including the media mentions in `highlights/`), and deploys `web/dist` to GitHub Pages. Enable Pages with "GitHub Actions" as the source in the repository settings.
+`.github/workflows/pages.yml` runs the tests, builds the site and deploys `web/dist` to GitHub Pages. It deploys the data committed in `web/public/data/` and does not crawl the source. To crawl again (for example if the source publishes new records), run the workflow by hand with the `crawl` option (`refresh` downloads every page again instead of reusing the cached ones). Enable Pages with "GitHub Actions" as the source in the repository settings.
 
 ## License
 
