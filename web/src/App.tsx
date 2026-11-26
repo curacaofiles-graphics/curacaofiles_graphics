@@ -74,7 +74,8 @@ export function App() {
   const [mentionsOn, setMentionsOn] = useState(() => new URLSearchParams(window.location.search).has("mentions"));
   const [countryMatch, setCountryMatch] = useState<CountryMatch>(() => {
     const params = new URLSearchParams(window.location.search);
-    return { residence: params.has("residence"), names: params.has("names") };
+    // Both are on by default; the URL only records when one is switched off (?residence=0, ?names=0).
+    return { residence: params.get("residence") !== "0", names: params.get("names") !== "0" };
   });
 
   useEffect(() => {
@@ -152,8 +153,8 @@ export function App() {
     setCountryMatch(next);
     const url = new URL(window.location.href);
     for (const key of ["residence", "names"] as const) {
-      if (next[key]) url.searchParams.set(key, "1");
-      else url.searchParams.delete(key);
+      if (next[key]) url.searchParams.delete(key);
+      else url.searchParams.set(key, "0");
     }
     window.history.replaceState(null, "", url);
   }, []);
